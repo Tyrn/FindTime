@@ -26,6 +26,8 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             //put your multiplatform dependencies here
+            implementation(libs.napier)
+            implementation(libs.datetime)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
